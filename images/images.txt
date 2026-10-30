@@ -1,0 +1,10 @@
+Haunted Birthday Website/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── images/
+    ├── background.jpeg
+    ├── photo2.jpg
+    └── photo3.jpg

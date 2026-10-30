@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Spooky Birthday Surprise!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FLOATING HALLOWEEN EMOJIS -->
+  <div class="floating-decor" aria-hidden="true">
+    <span>👻</span>
+    <span>🎃</span>
+    <span>🦇</span>
+    <span>✨</span>
+    <span>🕸️</span>
+    <span>👻</span>
+    <span>🦇</span>
+    <span>🎃</span>
+    <span>⭐</span>
+    <span>🧡</span>
+    <span>👻</span>
+    <span>🌙</span>
+  </div>
+
+  <header>
+    <h1>🎃 The Haunted Birthday Party 🎃</h1>
+    <p>A little spooky, a lot of love!</p>
+    <button id="musicBtn">♫ Play spooky music</button>
+  </header>
+
+  <main>
+
+    <!-- WELCOME SCREEN -->
+    <section class="welcome card">
+      <p class="eyebrow">YOU HAVE BEEN INVITED...</p>
+      <h2>Welcome to the Haunted Birthday House!</h2>
+      <p>I think its some lil gay niggas birthday</p>
+      <button id="enterBtn">Enter if you dare 👻</button>
+    </section>
+
+    <!-- PARTY ROOMS -->
+    <section id="party" class="hidden">
+
+      <div class="intro">
+        <h2>Happy Birthday, <span class="friend-name">YOUR FRIEND</span>! 🥳</h2>
+        <p>Explore and find some shi waiting for u.</p>
+      </div>
+
+      <div class="progress">
+        Secrets discovered: <span id="progress">0</span>/5
+      </div>
+
+      <div class="rooms">
+
+        <article class="room card">
+          <div class="room-icon">📸</div>
+          <h3>The Memory Attic</h3>
+          <p>A little collection of memories.</p>
+          <button data-room="memories">Open room</button>
+        </article>
+
+        <article class="room card">
+          <div class="room-icon">📖</div>
+          <h3>The Spell Book</h3>
+          <p>A few magical words for you.</p>
+          <button data-room="letter">Open room</button>
+        </article>
+
+        <article class="room card">
+          <div class="room-icon">🔮</div>
+          <h3>The Mystery Room</h3>
+          <p>Choose a mystery box!</p>
+          <button data-room="mystery">Open room</button>
+        </article>
+
+        <article class="room card">
+          <div class="room-icon">🎂</div>
+          <h3>The Cake Chamber</h3>
+          <p>Make a birthday wish.</p>
+          <button data-room="cake">Open room</button>
+        </article>
+
+        <article class="room card">
+          <div class="room-icon">🎁</div>
+          <h3>The Secret Chamber</h3>
+          <p>Something is waiting for you.</p>
+          <button data-room="secret">Open room</button>
+        </article>
+
+      </div>
+
+      <!-- ROOM CONTENT -->
+      <section id="roomContent" class="card hidden">
+        <button id="backBtn" class="back-button">← Back to rooms</button>
+        <div id="roomBody"></div>
+      </section>
+
+    </section>
+
+    <footer>
+      i am deffo a great programmer and didnt use ai to help me figure out how to make ts
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
